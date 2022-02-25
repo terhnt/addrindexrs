@@ -15,7 +15,7 @@ use crate::query::Query;
 use crate::util::{spawn_thread, Channel, SyncChannel};
 
 // Indexer version
-const ADDRINDEXRS_VERSION: &str = env!("CARGO_PKG_VERSION");
+const ADDRINDEXRS_UNO_VERSION: &str = env!("CARGO_PKG_VERSION");
 // Version of the simulated electrum protocol
 const PROTOCOL_VERSION: &str = "1.4";
 
@@ -56,7 +56,7 @@ impl Connection {
 
     fn server_version(&self) -> Result<Value> {
         Ok(json!([
-            format!("addrindexrs {}", ADDRINDEXRS_VERSION),
+            format!("addrindexrs_uno {}", ADDRINDEXRS_UNO_VERSION),
             PROTOCOL_VERSION
         ]))
     }

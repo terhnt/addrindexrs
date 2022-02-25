@@ -1,13 +1,13 @@
 [package]
-name = "addrindexrs"
+name = "addrindexrs_uno"
 version = "0.4.0"
 authors = ["Roman Zeyde <me@romanzey.de>", "kenshin-samourai <kenshin_samourai@tutanota.com>"]
 description = "An efficient address indexer in Rust"
 license = "MIT"
-homepage = "https://github.com/Samourai-Wallet/addrindexrs"
-repository = "https://github.com/Samourai-Wallet/addrindexrs"
-keywords = ["bitcoin", "server", "index", "database"]
-documentation = "https://github.com/Samourai-Wallet/addrindexrs/blob/master/doc/usage.md"
+homepage = "https://github.com/Samourai-Wallet/addrindexrs_uno"
+repository = "https://github.com/Samourai-Wallet/addrindexrs_uno"
+keywords = ["unobtanium", "server", "index", "database"]
+documentation = "https://github.com/Samourai-Wallet/addrindexrs_uno/blob/master/doc/usage.md"
 readme = "README.md"
 edition = "2018"
 build = "build.rs"

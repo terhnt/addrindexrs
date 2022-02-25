@@ -164,14 +164,14 @@ impl Config {
     pub fn from_args() -> Config {
         use internal::ResultExt;
 
-        let system_config: &OsStr = "/etc/addrindexrs/config.toml".as_ref();
+        let system_config: &OsStr = "/etc/addrindexrs_uno/config.toml".as_ref();
 
         let home_config = home_dir().map(|mut dir| {
-            dir.extend(&[".addrindexrs", "config.toml"]);
+            dir.extend(&[".addrindexrs_uno", "config.toml"]);
             dir
         });
 
-        let cwd_config: &OsStr = "addrindexrs.toml".as_ref();
+        let cwd_config: &OsStr = "addrindexrs_uno.toml".as_ref();
         let configs = std::iter::once(cwd_config)
             .chain(home_config.as_ref().map(AsRef::as_ref))
             .chain(std::iter::once(system_config));
@@ -195,9 +195,9 @@ impl Config {
         };
 
         let default_indexer_port = match config.network {
-            Network::Bitcoin => 50001,
-            Network::Testnet => 60001,
-            Network::Regtest => 60401,
+            Network::Bitcoin => 50021,
+            Network::Testnet => 60021,
+            Network::Regtest => 60421,
         };
 
         let daemon_rpc_addr: SocketAddr = config.daemon_rpc_addr.map_or(
@@ -221,7 +221,7 @@ impl Config {
             config
                 .verbose
                 .try_into()
-                .expect("Overflow: Running addrindexrs on less than 32 bit devices is unsupported"),
+                .expect("Overflow: Running addrindexrs_uno on less than 32 bit devices is unsupported"),
         );
 
         log.timestamp(if config.timestamp {

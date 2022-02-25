@@ -3,7 +3,7 @@ set -eu
 trap 'kill $(jobs -p)' EXIT
 
 DELAY=5
-LOG=/tmp/addrindexrs.log
+LOG=/tmp/addrindexrs_uno.log
 CARGO="cargo +stable"
 
 tail -v -n0 -F "$LOG" &

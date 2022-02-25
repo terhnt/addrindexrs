@@ -1,5 +1,5 @@
 [general]
-env_prefix = "ADDRINDEXRS"
+env_prefix = "ADDRINDEXRS_UNO"
 conf_file_param = "conf"
 conf_dir_param = "conf_dir"
 doc = """
@@ -43,12 +43,12 @@ default = "Default::default()"
 [[param]]
 name = "indexer_rpc_addr"
 type = "crate::config::ResolvAddr"
-doc = "Indexer JSONRPC 'addr:port' to listen on (default: '127.0.0.1:50001' for mainnet, '127.0.0.1:60001' for testnet and '127.0.0.1:60401' for regtest)"
+doc = "Indexer JSONRPC 'addr:port' to listen on (default: '127.0.0.1:50021' for mainnet, '127.0.0.1:60021' for testnet and '127.0.0.1:60421' for regtest)"
 
 [[param]]
 name = "daemon_rpc_addr"
 type = "crate::config::ResolvAddr"
-doc = "Bitcoin daemon JSONRPC 'addr:port' to connect (default: 127.0.0.1:8332 for mainnet, 127.0.0.1:18332 for testnet and 127.0.0.1:18443 for regtest)"
+doc = "Unobtanium daemon JSONRPC 'addr:port' to connect (default: 127.0.0.1:65535 for mainnet, 127.0.0.1:65531 for testnet and 127.0.0.1:18443 for regtest)"
 
 [[switch]]
 name = "jsonrpc_import"

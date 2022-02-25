@@ -1,9 +1,9 @@
 [Unit]
-Description=addrindexrs rust server
+Description=addrindexrs_uno rust server
 
 [Service]
 Type=simple
-ExecStart=/path/to/addrindexrs/target/release/addrindexrs -vvvv --db-dir /path/to/addrindexrs/db/
+ExecStart=/path/to/addrindexrs_uno/target/release/addrindexrs_uno -vvvv --db-dir /path/to/addrindexrs_uno/db/
 Restart=on-failure
 RestartSec=60
 Environment="RUST_BACKTRACE=1"

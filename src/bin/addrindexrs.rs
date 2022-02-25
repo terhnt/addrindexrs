@@ -1,4 +1,4 @@
-extern crate addrindexrs;
+extern crate addrindexrs_uno;
 
 extern crate error_chain;
 #[macro_use]
@@ -10,7 +10,7 @@ use std::sync::Arc;
 use std::time::Duration;
 
 
-use addrindexrs::{
+use addrindexrs_uno::{
     app::App,
     bulk,
     cache::BlockTxIDsCache,

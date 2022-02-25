@@ -1,4 +1,4 @@
-# addrindexrs
+# addrindexrs_uno
 
 
 ## Releases ##
@@ -11,11 +11,11 @@
 
 <a name="0_4_0"/>
 
-## addrindexrs v0.4.0 ##
+## addrindexrs_uno v0.4.0 ##
 
 ### Change log ###
 
-- [#mr7](https://code.samourai.io/dojo/addrindexrs/-/merge_requests/7) reactivate api endpoints
+- [#mr7](https://code.samourai.io/dojo/addrindexrs_uno/-/merge_requests/7) reactivate api endpoints
 
 
 #### Credits ###
@@ -25,11 +25,11 @@
 
 <a name="0_3_0"/>
 
-## addrindexrs v0.3.0 ##
+## addrindexrs_uno v0.3.0 ##
 
 ### Change log ###
 
-- [#9](https://github.com/Samourai-Wallet/addrindexrs/pull/9) rewrite writestore::flush()
+- [#9](https://github.com/Samourai-Wallet/addrindexrs_uno/pull/9) rewrite writestore::flush()
 
 
 #### Credits ###
@@ -39,12 +39,12 @@
 
 <a name="0_2_0"/>
 
-## addrindexrs v0.2.0 ##
+## addrindexrs_uno v0.2.0 ##
 
 ### Change log ###
 
-- [#6](https://github.com/Samourai-Wallet/addrindexrs/pull/6) store the compaction marker before the full compaction
-- [#7](https://github.com/Samourai-Wallet/addrindexrs/pull/7) add trace for indexed block
+- [#6](https://github.com/Samourai-Wallet/addrindexrs_uno/pull/6) store the compaction marker before the full compaction
+- [#7](https://github.com/Samourai-Wallet/addrindexrs_uno/pull/7) add trace for indexed block
 
 
 #### Credits ###
@@ -54,7 +54,7 @@
 
 <a name="0_1_0"/>
 
-## addrindexrs v0.1.0 ##
+## addrindexrs_uno v0.1.0 ##
 
 Initial release
 

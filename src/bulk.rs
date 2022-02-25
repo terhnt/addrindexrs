@@ -82,7 +82,7 @@ impl Parser {
 }
 
 //
-// Parse the bitcoin blocks
+// Parse the unobtanium blocks
 //
 fn parse_blocks(blob: Vec<u8>, magic: u32) -> Result<Vec<Block>> {
     let mut cursor = Cursor::new(&blob);
@@ -166,7 +166,7 @@ type JoinHandle = thread::JoinHandle<Result<()>>;
 type BlobReceiver = Arc<Mutex<Receiver<(Vec<u8>, PathBuf)>>>;
 
 //
-// 
+//
 //
 fn start_reader(blk_files: Vec<PathBuf>, parser: Arc<Parser>) -> (BlobReceiver, JoinHandle) {
     let chan = SyncChannel::new(0);
